@@ -7,7 +7,7 @@
 
     ![](../media/af35.png)
 
-1. Select **create_search_index.py**, this file is used to store vectorized data from the embeddings model.   
+1. Select **create_search_index.py**, this file is used to store vectorized data from the embeddings model.  
 
     ![](../media/af-34.png)
 
@@ -59,11 +59,11 @@
 
       ![](../media/af37.png)    
 
-    - Enter the **Username (1)**,  then click on **Next (2)**
+    - Enter the **Username: <inject key="AzureAdUserPassword"></inject> (1)**,  then click on **Next (2)**
 
       ![](../media/af38.png)  
 
-    - Enter the **Password (1)**,  then click on **Sign in (2)**
+    - Enter the **Password: <inject key="AzureAdUserPassword"></inject> (1)**,  then click on **Sign in (2)**
 
       ![](../media/af39.png)    
 
