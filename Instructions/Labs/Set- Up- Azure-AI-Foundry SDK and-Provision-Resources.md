@@ -39,7 +39,7 @@ In this lab, you will complete the following exercises:
       >**Note**: If you see a permission error, just ignore it. It will go away after selecting the required resource group.
 
     - Subscription: **Leave the default subscription (2)**
-    - Resource group: **ragsdk-<inject key="DeploymentID" enableCopy="false"/> (3)** 
+    - Resource group: Select **ragsdk-<inject key="DeploymentID" enableCopy="false"/> (3)** 
     - Location: **<inject key="Region" enableCopy="false"/> (4)**
     - Connect Azure AI Services or Azure OpenAI Service: **Leave default (5)**
 
@@ -91,9 +91,9 @@ In this lab, you will complete the following exercises:
 1. On the **Create a search service** page, provide the following details then click on **Review + create (6)**:
 
     - Subscription: **Leave your default subscription (1)**
-    - Resource group: **rag-1234 (2)**
-    - Service name: **aisearch-12345 (3)**
-    - Location: **Sweden central (4)**
+    - Resource group: Select **ragsdk-<inject key="DeploymentID" enableCopy="false"/> (2)**
+    - Service name: **aisearch-<inject key="DeploymentID" enableCopy="false"/> (3)**
+    - Location: **<inject key="Region" enableCopy="false"/> (4)**
     - Pricing tier: **Standard (5)**
 
       ![](../media/af13.png)    
