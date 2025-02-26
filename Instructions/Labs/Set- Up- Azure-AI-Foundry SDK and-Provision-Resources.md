@@ -80,7 +80,7 @@ In this lab, you will complete the following exercises:
 
     ![](../media/af12.png)
 
-1. You can see the deployed models.
+1. Click on **Models+Endpoints (1)**, you can see the deployed models **(2)**.
 
     ![](../media/af15.png)
 
@@ -111,7 +111,7 @@ In this lab, you will complete the following exercises:
 
     ![](../media/af16.png)
 
-1. Select **Connected resources (1)** then select **+ New connection (2)**.
+1. Select **Connected resources (1)** under the **Project(ContosoTrek)** section, then select **+ New connection (2)**.
 
     ![](../media/af17.png)
 
@@ -119,7 +119,7 @@ In this lab, you will complete the following exercises:
 
     ![](../media/af18.png)
 
-1. Search for the AI Search that is created by you **aisearch-1234 (1)**, use **API key (2)** for Authentication and then select **Add connection (3)**.
+1. Search for the AI Search that is created by you **aisearch-<inject key="DeploymentID" enableCopy="false"/> (1)**, use **API key (2)** for Authentication and then select **Add connection (3)**.
 
     ![](../media/af19.png)
 
@@ -131,11 +131,13 @@ In this lab, you will complete the following exercises:
 
 1. Open the **Visual Studio Code** from the desktop.
 
-1. Navigate to the **elipses(...) (1)**, click on **Terminal (2)** and then click on **New Terminal (3)**.
+    ![](../media/af81.png)
+
+1. Click on the **elipses(...) (1)**, click on **Terminal (2)** and then click on **New Terminal (3)**.
 
     ![](../media/af21.png)
 
-1. Clone the GitHub repository for the project to the **Downloads\ContosoTrek** folder to to access the necessary files for building the chat app.
+1. Enter the below command, to clone the GitHub repository for the project to the **ContosoTrek** folder to to access the necessary files for building the chat app.
 
    ```
    git clone https://github.com/Azure-Samples/azureai-samples.git C:\Users\demouser\Downloads\ContosoTrek
@@ -147,9 +149,9 @@ In this lab, you will complete the following exercises:
 
     ![](../media/af23.png)
 
-1. Navigate to **Downloads (1)**, select **ContosoTrek (2)** and then click on **Select Folder (3)**.
+1. Navigate to **C:\Users\demouser\Downloads (1)** press **Enter**, select **ContosoTrek (2)** and then click on **Select Folder (3)**.
 
-    ![](../media/af24.png)
+    ![](../media/af80.png)
 
 1. Click on **Yes, I trust the author**.
 
@@ -196,7 +198,6 @@ In this lab, you will complete the following exercises:
 1. Click on `.env` **(1)** file, replace **your_connection_string (2)** with the **Project connection string** that you had copied in Step 2.
 
     ![](../media/af32.png)
-
 
     ![](../media/af33.png)
 
