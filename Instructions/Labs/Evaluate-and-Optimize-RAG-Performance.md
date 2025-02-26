@@ -33,7 +33,7 @@
 
      ![](../media/af61.png)    
 
-1. Scroll down to `<run_evaluation>` section, around `73` or `74th` line then add the following code.
+1. Scroll down to `<run_evaluation>` section, around `69th` or `70th` line then add the following code below `"groundedness": groundedness`.
 
     ```bash
     "coherence": coherence, 
@@ -80,10 +80,9 @@
     python evaluate.py
     ```
 
-    ![](../media/af66.png)  
+     ![](../media/af66.png)  
 
-
-     >**Note**: If you encounter any error like **ImportError: cannot import name '_T' from 'marshmallow.fields'**, please run the below command to downgrade marshmallow.
+      >**Note**: If you encounter any error like **ImportError: cannot import name '_T' from 'marshmallow.fields'**, please run the below command to downgrade marshmallow.
 
       ```bash
       pip install --upgrade marshmallow==3.20.2

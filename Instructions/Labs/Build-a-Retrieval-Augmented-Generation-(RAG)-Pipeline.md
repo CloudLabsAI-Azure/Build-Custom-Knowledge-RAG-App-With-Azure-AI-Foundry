@@ -135,7 +135,7 @@
 
 1. Navigate back to **Azure AI Foundary** portal.
 
-1. Select **Tracing (1)** tab, to add an Application Insights resource to your projec and then click on **Create new (2)** to create a new resource.
+1. Select **Tracing (1)** tab, to add an Application Insights resource to your project and then click on **Create new (2)** to create a new resource.
 
     ![](../media/af49.png)
 
