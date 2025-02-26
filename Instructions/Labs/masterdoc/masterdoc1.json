@@ -5,7 +5,7 @@
         "BaseURL": "https://github.com/CloudLabsAI-Azure/Build-Custom-Knowledge-RAG-App-With-Azure-AI-Foundry",
         "Files": [
             {
-                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-openai/prod/Instructions/Labs/00-GettingStarted-V2.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Build-Custom-Knowledge-RAG-App-With-Azure-AI-Foundry/refs/heads/main/Instructions/Labs/GettingStarted-V2.md",
                 "Order": 1
             },
             {
