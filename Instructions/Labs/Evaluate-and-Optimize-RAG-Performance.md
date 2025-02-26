@@ -80,7 +80,22 @@
     python evaluate.py
     ```
 
-     ![](../media/af66.png)    
+    ![](../media/af66.png)  
+
+
+     >**Note**: If you encounter any error like **ImportError: cannot import name '_T' from 'marshmallow.fields'**, please run the below command to downgrade marshmallow.
+
+      ```bash
+      pip install --upgrade marshmallow==3.20.2
+      ```
+
+1. Once the upgarde is completed, rerun the below command again.
+
+    ```bash
+    python evaluate.py
+    ```
+
+     ![](../media/af66.png) 
 
       >**Note**: Expect the evaluation to take around 5 - 10 minutes to complete.  
 
