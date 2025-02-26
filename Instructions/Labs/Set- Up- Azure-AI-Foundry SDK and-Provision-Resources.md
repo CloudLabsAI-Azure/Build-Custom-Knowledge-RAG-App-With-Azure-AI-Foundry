@@ -18,7 +18,7 @@ In this lab, you will complete the following exercises:
 
 ### Task 1: Create a project
 
-1. Navigate to the **Home** page of `Azure AI Foundry`, by right click on the following link [Azure AI Foundry](https://ai.azure.com) and then paste it on the browser.
+1. Navigate to the Home page of A**zure AI Foundry** by right-clicking on [Azure AI Foundry](https://ai.azure.com), selecting **Copy link**, and pasting it into your browser.
 
 1. Click on **Sign in**.
 
@@ -35,9 +35,12 @@ In this lab, you will complete the following exercises:
 1. On the **Create a project** page, provide the following details and then click on **Next (6)**:
 
     - Hub name: **ContosoHub (1)**
+
+      >**Note**: If you see a permission error, just ignore it. It will go away after selecting the required resource group.
+
     - Subscription: **Leave the default subscription (2)**
-    - Resource group: **rag-1234 (3)** 
-    - Location: **Sweden Central (4)**
+    - Resource group: **ragsdk-<inject key="DeploymentID" enableCopy="false"/> (3)** 
+    - Location: **<inject key="Region" enableCopy="false"/> (4)**
     - Connect Azure AI Services or Azure OpenAI Service: **Leave default (5)**
 
       ![](../media/af6.png)     
