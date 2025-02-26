@@ -9,9 +9,17 @@
                 "Order": 1
             },
             {
-                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-openai/prod/Instructions/Labs/03-prompt-engineering-1.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Build-Custom-Knowledge-RAG-App-With-Azure-AI-Foundry/refs/heads/main/Instructions/Labs/Set-%20Up-%20Azure-AI-Foundry%20SDK%20and-Provision-Resources.md",
                 "Order": 2
-            }
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Build-Custom-Knowledge-RAG-App-With-Azure-AI-Foundry/refs/heads/main/Instructions/Labs/Set-%20Up-%20Azure-AI-Foundry%20SDK%20and-Provision-Resources.md",
+                "Order": 3
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Build-Custom-Knowledge-RAG-App-With-Azure-AI-Foundry/refs/heads/main/Instructions/Labs/Set-%20Up-%20Azure-AI-Foundry%20SDK%20and-Provision-Resources.md",
+                "Order": 4
+            }            
         ]
     }
 ]
