@@ -59,7 +59,7 @@
 
       ![](../media/af37.png)    
 
-    - Enter the **Username: <inject key="AzureAdUserPassword"></inject> (1)**,  then click on **Next (2)**
+    - Enter the **Username: <inject key="AzureAdUserEmail"></inject> (1)**,  then click on **Next (2)**
 
       ![](../media/af38.png)  
 
