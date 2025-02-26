@@ -1,1 +1,17 @@
-
+[
+    {
+        "Name": "Lab : Build a custom knowledge retrieval (RAG) app with the Azure AI Foundry SDK",
+        "Language": "English",
+        "BaseURL": "https://github.com/CloudLabsAI-Azure/Build-Custom-Knowledge-RAG-App-With-Azure-AI-Foundry",
+        "Files": [
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-openai/prod/Instructions/Labs/00-GettingStarted-V2.md",
+                "Order": 1
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-openai/prod/Instructions/Labs/03-prompt-engineering-1.md",
+                "Order": 2
+            }
+        ]
+    }
+]
