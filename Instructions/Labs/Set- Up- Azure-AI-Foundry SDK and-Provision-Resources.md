@@ -18,7 +18,7 @@ In this lab, you will complete the following exercises:
 
 ### Task 1: Create a project
 
-1. Navigate to the Home page of A**zure AI Foundry** by right-clicking on [Azure AI Foundry](https://ai.azure.com), selecting **Copy link**, and pasting it into your browser.
+1. Navigate to the Home page of **Azure AI Foundry** by right-clicking on [Azure AI Foundry](https://ai.azure.com), selecting **Copy link**, and pasting it into your browser.
 
 1. Click on **Sign in**.
 
