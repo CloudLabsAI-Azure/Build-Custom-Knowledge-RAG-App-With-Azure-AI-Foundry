@@ -70,7 +70,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
  
-![Manage Your Virtual Machine](../media/afg5.png)
+ ![Manage Your Virtual Machine](../media/afg5.png)
 
 ## Lab Validation
 
