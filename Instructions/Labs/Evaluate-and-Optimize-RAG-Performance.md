@@ -3,6 +3,8 @@
 
 ### Task 1: Evaluate with Azure AI evaluators
 
+1. Navigate back to the **Visual Studio Code**. 
+
 1. Expand **assets (1)** folder, select **chat_eval_data.jsonl (2)**. This is a evaluation dataset, which contains example questions and expected answers (truth).
 
     ![](../media/af58.png)
@@ -44,19 +46,7 @@
 
 1. Press **Ctrl+S** to save the file.
 
-### Task 2: Configure the evaluation model
-
-1. In your project in **Azure AI Foundry** portal, select **Models + endpoints (1)**, select **gpt-4o-mini (2)** and then click on **Edit (3)**.
-
-    ![](../media/af63.png)
-
-1. If you have quota to increase the **Tokens per Minute Rate Limit**, try increasing it to Maximum and then click on **Save and close (2)**.
-
-    ![](../media/af64.png)
-
-     >**Note:** If you don't have enough quota to increase the value, don't worry. The script is designed to handle limit errors.
-
-### Task 3: Implementing Evaluation Methods      
+### Task 2: Implementing Evaluation Methods      
 
 1. From your console, sign in to your Azure account with the Azure CLI:
 
@@ -98,7 +88,7 @@
 
       >**Note**: Expect the evaluation to take around 5 - 10 minutes to complete.  
 
-      >**Note**: If you weren't able to increase the tokens per minute limit for your model, you might see some time-out errors, which are expected. The evaluation script is designed to handle these errors and continue running.  
+      >**Note**: You might see some time-out errors, which are expected. The evaluation script is designed to handle these errors and continue running.  
 
 1. In the console output, you see an answer for each question, followed by a table with summarized metrics. (You might see different columns in your output.)
 
@@ -130,11 +120,11 @@
 
      ![](../media/af67.png)   
 
-      >**Note**: If you weren't able to increase the tokens per minute limit for your model, you might see some time-out errors, which are expected. The evaluation script is designed to handle these errors and continue running.   
+      >**Note**: You might see some time-out errors, which are expected. The evaluation script is designed to handle these errors and continue running.   
 
-### Task 4: Interpreting Results and Fine-Tuning         
+### Task 3: Interpreting Results and Fine-Tuning         
 
-1. Once the evaluation run completes, follow the link to view the evaluation results on the Evaluation page in the Azure AI Foundry portal **(1)**, then click on **Open (2)**.
+1. Once the evaluation run completes, **Ctrl+click** on the link to view the evaluation results on the Evaluation page in the Azure AI Foundry portal **(1)**, then click on **Open (2)**.
 
     ![](../media/af68.png)
 
@@ -170,7 +160,7 @@
 
      >**Note**: If you weren't able to increase the tokens per minute limit for your model, you might see some time-out errors, which are expected. The evaluation script is designed to handle these errors and continue running.
 
-1. Once the evaluation run completes, follow the link to view the evaluation results on the Evaluation page in the Azure AI Foundry portal **(1)**, then click on **Open (2)**.
+1. Once the evaluation run completes, **Ctrl+click** on the link to view the evaluation results on the Evaluation page in the Azure AI Foundry portal **(1)**, then click on **Open (2)**.
 
     ![](../media/af68.png)    
 

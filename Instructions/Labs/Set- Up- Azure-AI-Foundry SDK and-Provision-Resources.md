@@ -24,6 +24,8 @@ In this lab, you will complete the following exercises:
 
     ![](../media/af1.png) 
 
+     >**Note**: Select **Got it**, if you get any pop up like **Streamlined from the start**.
+
 1. Select **+ Create project**.
 
     ![](../media/af-2.png) 
@@ -52,6 +54,8 @@ In this lab, you will complete the following exercises:
 1. Wait until the resources are created.
 
     ![](../media/af5.png)
+
+     >**Note**: If you get any pop up, please **close**.
 
 
 ## Task 2: Deploying and Managing AI Models 
@@ -82,7 +86,7 @@ In this lab, you will complete the following exercises:
 
 1. Click on **Models+Endpoints (1)**, you can see the deployed models **(2)**.
 
-    ![](../media/af15.png)
+    ![](../media/af-15.png)
 
 ## Task 3: Create an Azure AI Search service
 

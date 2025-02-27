@@ -73,7 +73,7 @@
 
 1. Navigate back to the Visual Studio code terminal, press **Enter** to accept th default subscription.
 
-    ![](../media/af41.png)
+    ![](../media/af-41.png)
 
 1. Run the code to build your index locally and register it to the cloud project:
 
@@ -161,7 +161,7 @@
 
     ![](../media/af52.png)   
 
-1. Click on the link in the console output to see the telemetry data in your Application Insights resource **(1)** and click **Open (2)**.    
+1. **Ctrl+click** on the link in the console output to see the telemetry data in your Application Insights resource **(1)** and click **Open (2)**.    
 
     ![](../media/af53.png)
 
@@ -169,7 +169,7 @@
 
     ![](../media/af54.png)
 
-     >**Note:** If it doesn't appear right away, wait a few minutes and select **Refresh** in the toolbar.
+     >**Note:** If it doesn't appear right away, select **Refresh** in the toolbar. It may take around 5 minutes to appear.
 
 1. In your project, you can **filter** your traces as you see fit. Click on **Filter**.
 
