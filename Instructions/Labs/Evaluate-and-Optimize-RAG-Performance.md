@@ -54,7 +54,7 @@
     az login
     ```
 
-1. Run the below command to install the required package for running evaluation script:
+1. From your console, run the below command to install the required package for running evaluation script:
 
     ```bash
     pip install azure-ai-evaluation[remote]
