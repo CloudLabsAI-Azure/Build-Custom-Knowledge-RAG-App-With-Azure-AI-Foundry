@@ -48,12 +48,6 @@
 
 ### Task 2: Implementing Evaluation Methods      
 
-1. From your console, sign in to your Azure account with the Azure CLI:
-
-    ```bash
-    az login
-    ```
-
 1. From your console, run the below command to install the required package for running evaluation script:
 
     ```bash
