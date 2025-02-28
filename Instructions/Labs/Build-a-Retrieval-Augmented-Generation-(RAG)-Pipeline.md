@@ -1,7 +1,20 @@
 
 ## Exercise 2: Build a Retrieval-Augmented Generation (RAG) Pipeline
 
+In this exercise, you will enhance a basic chat application by integrating a Retrieval-Augmented Generation (RAG) pipeline. This includes indexing knowledge sources, implementing a retrieval mechanism, generating responses with augmented knowledge, and adding telemetry logging to monitor performance and accuracy.
+
+## Objectives
+
+In this exercise, you will complete the following tasks:
+
+- Task 1: Indexing Knowledge Sources
+- Task 2: Implementing the Retrieval Pipeline
+- Task 3: Generating Responses with Augmented Knowledge
+- Task 4: Add telemetry logging
+
 ### Task 1: Indexing Knowledge Sources 
+
+In this task, you will index knowledge sources by processing and storing vectorized data from a CSV file using a search index. You will also authenticate your Azure account, execute the indexing script, and register the index to your cloud project.
 
 1. Expand **assets (1)** folder, select **products.csv** file **(2)**. This file contains the  example data set that will be used in your chat app.
 
@@ -85,6 +98,8 @@
 
 ### Task 2: Implementing the Retrieval Pipeline 
 
+In this task, you will implement the retrieval pipeline by extracting relevant product documents from the search index. You will configure and execute a script that transforms user queries into search requests, retrieving the most relevant results from the indexed knowledge source.
+
 1. Select **get_product_documents.py** file, this file contains script to get product documents from the search index.
 
     ![](../media/af43.png)
@@ -109,6 +124,8 @@
 
 ### Task 3: Generating Responses with Augmented Knowledge     
 
+In this task, you will generate responses using augmented knowledge by leveraging retrieved product documents. You will run a script that integrates retrieval-augmented generation (RAG) capabilities to provide relevant and grounded responses based on user queries.
+
 1. Select **chat_with_products.py** file. This script retrieves product documents and generates a response to a user's question.
 
     ![](../media/af46.png)
@@ -132,6 +149,8 @@
      ![](../media/af48.png)  
 
 ### Task 4: Add telemetry logging
+
+In this task, you will enable telemetry logging by integrating Application Insights into your project. This allows you to monitor and analyze your RAG application's performance, track queries, and log response details for better observability and debugging.
 
 1. Navigate back to **Azure AI Foundary** portal.
 
@@ -182,6 +201,16 @@
 1. Now you can only see the data with Success as **True**.
 
     ![](../media/af57.png)
+
+### Summary
+
+In this exercise, you have accomplished the following:
+- Task 1: Indexing Knowledge Sources
+- Task 2: Implementing the Retrieval Pipeline
+- Task 3: Generating Responses with Augmented Knowledge
+- Task 4: Add telemetry logging
+
+### You have successfully finished the exercise. Click **Next** to continue to the next exercise.    
 
 
 

@@ -4,13 +4,13 @@
 
 ## Overview
 
-In this Hands-On Lab, you will learn how to build a custom knowledge retrieval-augmented generation (RAG) application using the Azure AI Foundry SDK. This lab will guide you through provisioning necessary resources, implementing a retrieval pipeline, and evaluating the system’s performance. By the end of the session, you will have a functional RAG solution that integrates Azure AI capabilities for enhanced knowledge retrieval and response generation.
+In this Hands-On Lab, you will learn how to build a custom knowledge retrieval-augmented generation (RAG) application using the Azure AI Foundry SDK. This lab will guide you through provisioning necessary resources, implementing a retrieval pipeline, and evaluating the system’s performance. By the end of the lab, you will have a functional RAG solution that integrates Azure AI capabilities for enhanced knowledge retrieval and response generation.
 
 ## Objectives
 
 By the end of this lab, you will be able to:
 
-- **Set Up Azure AI Foundry SDK and Provision Resources**: Learn how to provision the required resources in Azure AI Studio to support knowledge retrieval and model inference.
+- **Set Up Azure AI Foundry SDK and Provision Resources**: Learn how to provision the required resources in Azure AI Foundry to support knowledge retrieval and model inference.
 - **Building a RAG pipeline**: Implement a retrieval-augmented generation system that indexes and retrieves relevant data to enhance AI-generated responses.
 - **Evaluate and Optimize RAG Performance**: Apply best practices to measure retrieval accuracy, response quality, and system efficiency.
 
@@ -19,22 +19,23 @@ By the end of this lab, you will be able to:
 
 - Familiarity with Azure OpenAI Service.
 - Basic understanding of large language models and their applications.
+- Familiarity with Retrieval-Augmented Generation (RAG) concepts.
 
 ## Architecture
 
-The architecture flow involves using the Azure OpenAI Service to integrate your data with a large language model (LLM), allowing you to manage how the model interacts with your information by focusing on specific topics or blending it with pre-trained results. The service employs default content filters to detect and remove harmful content, and you can also apply custom filters tailored to your needs. This approach ensures that content filtering is effectively used to uphold responsible AI practices, providing insights into its role in maintaining secure and safe interactions.
+'The architecture flow involves using Azure AI Foundry to provision resources, including AI models and a vector database for knowledge retrieval. Visual Studio Code is used to develop the RAG application, integrating retrieval and generation components. Once deployed, the app is evaluated in Azure AI Foundry to monitor retrieval accuracy, response quality, and performance, ensuring an optimized AI system.
 
 ## Architecture Diagram
 
-  ![](../media/arch15.PNG)
+  ![](../media/afg15.png)
 
 ## Explanation of Components
 
-1. **Azure OpenAI**: Azure OpenAI Service provides REST API access to OpenAI's powerful language models and these models integrates with your data, enabling customized and secure interactions.
+1. **Azure AI Foundry** – Provides the foundational infrastructure, including AI models, vector databases, and necessary resources for deploying and managing the RAG pipeline.
 1. **Azure OpenAI Models**: Offers pre-trained and customizable large language models for various AI applications. These models allow for powerful AI-driven solutions by generating tailored and contextually relevant content based on well-crafted prompts.
-1. **Azure CloudShell**: Azure CloudShell offers an integrated, browser-based shell experience for managing Azure resources. It provides a ready-to-use environment with pre-installed tools and access to both Bash and PowerShell.
-1. **Storage Account**: Manages and stores data, providing scalable and secure cloud storage solutions.
-1. **Content Filter**: Detects and removes harmful content to ensure safe and responsible AI interactions.
+1. **Visual Studio Code** – Serves as the development environment for building the RAG application, integrating retrieval mechanisms with AI-generated responses.
+1. **Retrieval-Augmented Generation (RAG) Pipeline** – Fetches relevant knowledge from a vector database before generating responses, improving accuracy and relevance.
+1. **Evaluation & Monitoring (Azure AI Foundry)** – Tracks model performance, retrieval accuracy, and response quality, enabling continuous optimization and debugging.
 
 ## Getting Started with the Lab
  
@@ -74,7 +75,7 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
 ## Lab Validation
 
-1. After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
+1. After completing the task, hit the **Validate (1)** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
    ![Inline Validation](../media/u46.png)
 
@@ -111,7 +112,7 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
    ![Launch Azure Portal](../media/afg10.png)
 
-This hands-on-lab will help you to gain insights on how Azure OpenAI’s content filtering mechanisms contribute to responsible AI deployment, and how you can leverage these filters to ensure that your AI models adhere to appropriate content standards.
+This hands-on lab will guide you in building a custom Retrieval-Augmented Generation (RAG) application using the Azure AI Foundry SDK. You will learn how to provision essential resources, develop a retrieval pipeline, and evaluate system performance. Through this lab, you will gain insights into how Azure AI Foundry enhances knowledge retrieval and response generation, enabling more accurate and context-aware AI applications.
 
 ## Support Contact
 

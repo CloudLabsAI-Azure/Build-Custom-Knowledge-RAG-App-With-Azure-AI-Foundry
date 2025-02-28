@@ -16,7 +16,11 @@ In this lab, you will complete the following exercises:
 
 ## Exercise 1: Set Up Azure AI Foundry SDK and Provision Resources 
 
+In this exercise, you will set up the Azure AI Foundry SDK and provision the necessary resources to support your RAG pipeline. This includes configuring the environment, deploying foundation models, and ensuring seamless integration with Azure AI services for knowledge retrieval and inference.
+
 ### Task 1: Create a project
+
+In this task, you will create a new project in Azure AI Foundry, configure the required resources.
 
 1. Navigate to the Home page of **Azure AI Foundry** by right-clicking on [Azure AI Foundry](https://ai.azure.com), selecting **Copy link**, and pasting it into your browser.
 
@@ -58,7 +62,9 @@ In this lab, you will complete the following exercises:
      >**Note**: If you get any pop up, please **close**.
 
 
-## Task 2: Deploying and Managing AI Models 
+### Task 2: Deploying and Managing AI Models 
+
+In this task, you will deploy models in your Azure AI Foundry project. As you need two models to build a RAG-based chat app: an Azure OpenAI chat model (gpt-4o-mini) and an Azure OpenAI embedding model (text-embedding-ada-002).
 
 1. On the left navigation pane, select **Model catalog (1)**. Search for **gpt-4o-mini (2)** and then select **gpt-4o-mini (3)**.
 
@@ -88,7 +94,9 @@ In this lab, you will complete the following exercises:
 
     ![](../media/af-15.png)
 
-## Task 3: Create an Azure AI Search service
+### Task 3: Create an Azure AI Search service
+
+In this task, you will create a Azure AI Search service. You need an Azure AI Search service and connection in order to create a search index.
 
 1. Right click on [Create an Azure AI Search service](https://portal.azure.com/#create/Microsoft.Search) , click on **Copy link** and then paste it on the LabVM browser to create Azure AI Search service in the Azure portal.
 
@@ -109,7 +117,9 @@ In this lab, you will complete the following exercises:
 1. Wait for the deployment to complete.
 
 
-## Task 4: Connect the Azure AI Search to your project
+### Task 4: Connect the Azure AI Search to your project
+
+In this task, you will connect the Azure AI Search to your project. Azure AI Search service and connection in order to create a search index. The search index is used to retrieve relevant documents based on the user's question.
 
 1. Navigate back to **Azure AI Foundary** portal, select **Management center** from the left pane.
 
@@ -132,6 +142,8 @@ In this lab, you will complete the following exercises:
     ![](../media/af20.png)
 
 ### Task 5: Clone the GitHub repository for the project
+
+In this task, you will clone the GitHub repository for the project to access the necessary files for building the chat app.
 
 1. Open the **Visual Studio Code** from the desktop.
 
@@ -183,6 +195,8 @@ In this lab, you will complete the following exercises:
 
 ### Task 6: Configure environment variables
 
+In this task, you will set up and configure the necessary environment variables to ensure seamless integration between your RAG application and Azure AI Foundry services.
+
 1. Navigate back to the **Azure AI Foundary** portal. If your in **Azure AI Foundary | Management center**, click on **Go to project**.
 
     ![](../media/af-30.png)
@@ -207,8 +221,17 @@ In this lab, you will complete the following exercises:
 
 1. Press **Ctrl+S** to save the file.
 
+### Summary
 
+In this exercise, you have accomplished the following:
+- Task 1: Create a project
+- Task 2: Deploying and Managing AI Models
+- Task 3: Create an Azure AI Search service
+- Task 4: Connect the Azure AI Search to your project
+- Task 5: Clone the GitHub repository for the project
+- Task 6: Configure environment variables
 
+### You have successfully finished the exercise. Click **Next** to continue to the next exercise.
 
 
 

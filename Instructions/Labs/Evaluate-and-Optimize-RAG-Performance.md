@@ -1,7 +1,19 @@
 
 ## Exercise 3: Evaluate and Optimize RAG Performance
 
+In this exercise, you will evaluate the performance of your RAG pipeline using Azure AI evaluators, implement various evaluation methods, and interpret the results to fine-tune your model. This ensures improved retrieval accuracy, response quality, and overall system efficiency.
+
+## Objectives
+
+In this exercise, you will complete the following tasks:
+
+- Task 1: Evaluate with Azure AI evaluators
+- Task 2: Implementing Evaluation Methods
+- Task 3: Interpreting Results and Fine-Tuning 
+
 ### Task 1: Evaluate with Azure AI evaluators
+
+In this task, you will evaluate the RAG pipeline using Azure AI evaluators by analyzing key metrics such as coherence, relevance, and groundedness. You will modify the evaluation script to incorporate these metrics and log the results for further analysis.
 
 1. Navigate back to the **Visual Studio Code**. 
 
@@ -47,6 +59,8 @@
 1. Press **Ctrl+S** to save the file.
 
 ### Task 2: Implementing Evaluation Methods      
+
+In this task, you will implement evaluation methods to assess the performance of your RAG pipeline. You will install necessary dependencies, run the evaluation script, and analyze metrics such as Groundedness, Coherence, and Relevance to ensure response quality.
 
 1. From your console, run the below command to install the required package for running evaluation script:
 
@@ -118,6 +132,8 @@
 
 ### Task 3: Interpreting Results and Fine-Tuning         
 
+In this task, you will interpret the evaluation results and fine-tune the RAG pipeline by adjusting the prompt template. You will analyze the **Relevance, Groundedness, and Coherence** scores, modify the prompt instructions, and re-run the evaluation to improve response accuracy.
+
 1. Once the evaluation run completes, **Ctrl+click** on the link to view the evaluation results on the Evaluation page in the Azure AI Foundry portal **(1)**, then click on **Open (2)**.
 
     ![](../media/af68.png)
@@ -167,3 +183,13 @@
     ![](../media/af79.png)    
 
 1. Try other modifications to the prompt template, to see how the changes affect the evaluation results.    
+
+### Summary
+
+In this exercise, you have accomplished the following:
+- Task 1: Evaluate with Azure AI evaluators
+- Task 2: Implementing Evaluation Methods
+- Task 3: Interpreting Results and Fine-Tuning 
+
+
+### You have successfully finished the exercise. 
