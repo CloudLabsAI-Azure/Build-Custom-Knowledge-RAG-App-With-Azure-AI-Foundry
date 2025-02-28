@@ -17,13 +17,13 @@ By the end of this lab, you will be able to:
   
 ## Pre-requisites
 
-- Familiarity with Azure OpenAI Service.
+- Familiarity with Azure AI Foundry.
 - Basic understanding of large language models and their applications.
 - Familiarity with Retrieval-Augmented Generation (RAG) concepts.
 
 ## Architecture
 
-'The architecture flow involves using Azure AI Foundry to provision resources, including AI models and a vector database for knowledge retrieval. Visual Studio Code is used to develop the RAG application, integrating retrieval and generation components. Once deployed, the app is evaluated in Azure AI Foundry to monitor retrieval accuracy, response quality, and performance, ensuring an optimized AI system.
+The architecture flow involves using Azure AI Foundry to provision resources, including AI models and a vector database for knowledge retrieval. Visual Studio Code is used to develop the RAG application, integrating retrieval and generation components. Once deployed, the app is evaluated in Azure AI Foundry to monitor retrieval accuracy, response quality, and performance, ensuring an optimized AI system.
 
 ## Architecture Diagram
 
