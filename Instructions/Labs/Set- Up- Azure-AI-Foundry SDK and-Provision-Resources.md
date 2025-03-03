@@ -62,7 +62,7 @@ In this task, you will create a new project in Azure AI Foundry, configure the r
      >**Note**: If you get any pop up, please **close**.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:    
-   - If you receive a success message, you can proceed to the next task.
+   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
@@ -101,7 +101,7 @@ In this task, you will deploy models in your Azure AI Foundry project. As you ne
     ![](../media/af-15.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:    
-   - If you receive a success message, you can proceed to the next task.
+   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
@@ -130,7 +130,7 @@ In this task, you will create a Azure AI Search service. You need an Azure AI Se
 1. Wait for the deployment to complete.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:    
-   - If you receive a success message, you can proceed to the next task.
+   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
