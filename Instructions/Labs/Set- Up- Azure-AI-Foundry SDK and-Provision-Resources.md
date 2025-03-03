@@ -1,4 +1,4 @@
-# Lab : Build a custom knowledge retrieval (RAG) app with the Azure AI Foundry SDK
+# Lab : Developing a Custom RAG App Using Azure AI Foundry
 
 ## Lab scenario
 

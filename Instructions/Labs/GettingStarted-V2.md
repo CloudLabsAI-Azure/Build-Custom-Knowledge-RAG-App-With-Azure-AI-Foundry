@@ -1,4 +1,4 @@
-# Build a custom knowledge retrieval (RAG) app with the Azure AI Foundry SDK
+# Developing a Custom RAG App Using Azure AI Foundry
 
 ### Overall Estimated Duration: 4 Hours
 
