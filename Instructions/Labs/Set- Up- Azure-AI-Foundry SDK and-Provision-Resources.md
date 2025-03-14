@@ -115,13 +115,13 @@ In this task, you will create a Azure AI Search service. You need an Azure AI Se
 
 1. On the **Create a search service** page, provide the following details then click on **Review + create (6)**:
         
-    - Subscription: **Leave your default subscription (1)**
-    - Resource group: Select **ragsdk-<inject key="DeploymentID" enableCopy="false"/> (2)**
-    - Service name: **aisearch-<inject key="DeploymentID" enableCopy="false"/> (3)**
-    - Location: **<inject key="Region" enableCopy="false"/> (4)**
-    - Pricing tier: **Standard (5)**
+     - Subscription: **Leave your default subscription (1)**
+     - Resource group: Select **ragsdk-<inject key="DeploymentID" enableCopy="false"/> (2)**
+     - Service name: **aisearch-<inject key="DeploymentID" enableCopy="false"/> (3)**
+     - Location: **<inject key="Region" enableCopy="false"/> (4)**
+     - Pricing tier: **Standard (5)**
 
-      ![](../media/af13.png)
+       ![](../media/af13.png)
       
 1. Click on **Create** on *Review+create* page.
 
