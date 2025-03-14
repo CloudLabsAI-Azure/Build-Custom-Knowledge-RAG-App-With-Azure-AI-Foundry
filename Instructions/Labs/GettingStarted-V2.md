@@ -32,7 +32,7 @@ The architecture flow involves using Azure AI Foundry to provision resources, in
 
 ## Explanation of Components
 
-1. **Azure AI Foundry** – Azure AI Foundry provides the foundational infrastructure including AI models, vector databases, and necessary resources for deploying and managing Retrieval-Augmented Generation (RAG) pipelines. This platform enables the creation of AI applications that utilize retrieval systems to enhance the accuracy and relevance of AI-generated responses.
+1. **Azure AI Foundry**: Azure AI Foundry provides the foundational infrastructure including AI models, vector databases, and necessary resources for deploying and managing Retrieval-Augmented Generation (RAG) pipelines. This platform enables the creation of AI applications that utilize retrieval systems to enhance the accuracy and relevance of AI-generated responses.
 
 1. **Azure OpenAI**: Azure OpenAI Service provides REST API access to OpenAI's powerful language models and these models integrates with your data, enabling customized and secure interactions.
 
@@ -40,11 +40,11 @@ The architecture flow involves using Azure AI Foundry to provision resources, in
 
 1. **Azure AI Search**: Azure AI Search, formerly known as Azure Cognitive Search, is an enterprise-ready information retrieval system that allows you to store, index, and search your data, enabling powerful retrieval-augmented generation (RAG) applications and enterprise search engines. 
 
-1. **Visual Studio Code** – Serves as the development environment for building the RAG application, integrating retrieval mechanisms with AI-generated responses.
+1. **Visual Studio Code**: Serves as the development environment for building the RAG application, integrating retrieval mechanisms with AI-generated responses.
 
-1. **Retrieval-Augmented Generation (RAG) Pipeline** – A Retrieval-Augmented Generation (RAG) pipeline enhances AI-generated responses by integrating external knowledge into the generation process. It involves retrieving pertinent information from a vector database based on user queries, which is then used to augment the AI's responses, leading to more accurate and contextually relevant outputs. 
+1. **Retrieval-Augmented Generation (RAG) Pipeline**: A Retrieval-Augmented Generation (RAG) pipeline enhances AI-generated responses by integrating external knowledge into the generation process. It involves retrieving pertinent information from a vector database based on user queries, which is then used to augment the AI's responses, leading to more accurate and contextually relevant outputs. 
 
-1. **Evaluation & Monitoring (Azure AI Foundry)** – Tracks model performance, retrieval accuracy, and response quality, enabling continuous optimization and debugging.
+1. **Evaluation & Monitoring (Azure AI Foundry)**: Tracks model performance, retrieval accuracy, and response quality, enabling continuous optimization and debugging.
 
 ## Getting Started with the Lab
  
