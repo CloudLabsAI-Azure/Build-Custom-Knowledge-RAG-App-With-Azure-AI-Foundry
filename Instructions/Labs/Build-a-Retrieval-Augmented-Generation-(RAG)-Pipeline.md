@@ -202,13 +202,15 @@ In this task, you will enable telemetry logging by integrating Application Insig
 
     ![](../media/af57.png)
 
-### Summary
+### Review
+
+This exercise focused on building a Retrieval-Augmented Generation (RAG) pipeline by indexing knowledge sources and implementing an efficient retrieval system. Participants generated AI responses enriched with relevant data and integrated telemetry logging to monitor and optimize system performance.
 
 In this exercise, you have accomplished the following:
-- Task 1: Indexing Knowledge Sources
-- Task 2: Implementing the Retrieval Pipeline
-- Task 3: Generating Responses with Augmented Knowledge
-- Task 4: Add telemetry logging
+- Task 1: Indexed Knowledge Sources
+- Task 2: Implemented the Retrieval Pipeline
+- Task 3: Generated Responses with Augmented Knowledge
+- Task 4: Added telemetry logging
 
 ### You have successfully finished the exercise. Click **Next** to continue to the next exercise.    
 

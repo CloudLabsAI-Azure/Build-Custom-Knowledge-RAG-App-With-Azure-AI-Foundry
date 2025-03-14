@@ -1,5 +1,7 @@
 # Lab : Developing a Custom RAG App Using Azure AI Foundry
 
+## Estimated time: 4 hour
+
 ## Lab scenario
 
 In this Hands-On Lab, you will learn how to build a custom Retrieval-Augmented Generation (RAG) application using the Azure AI Foundry SDK. You will begin by setting up the required Azure resources and configuring the AI Foundry environment. Then, you will implement a RAG pipeline that indexes and retrieves relevant data to enhance AI-generated responses. Finally, you will evaluate and optimize the system’s performance by measuring retrieval accuracy, response quality, and efficiency. By the end of the session, you will have a functional RAG solution that integrates Azure AI capabilities for enhanced knowledge retrieval and response generation. 
@@ -11,8 +13,6 @@ In this lab, you will complete the following exercises:
 - Exercise 1: Set Up Azure AI Foundry SDK and Provision Resources 
 - Exercise 2: Build a Retrieval-Augmented Generation (RAG) Pipeline 
 - Exercise 3: Evaluate and Optimize RAG Performance 
-
-## Estimated time: 4 hour
 
 ## Exercise 1: Set Up Azure AI Foundry SDK and Provision Resources 
 
@@ -114,7 +114,7 @@ In this task, you will create a Azure AI Search service. You need an Azure AI Se
 1. Right click on [Create an Azure AI Search service](https://portal.azure.com/#create/Microsoft.Search) , click on **Copy link** and then paste it on the LabVM browser to create Azure AI Search service in the Azure portal.
 
 1. On the **Create a search service** page, provide the following details then click on **Review + create (6)**:
-
+    
     - Subscription: **Leave your default subscription (1)**
     - Resource group: Select **ragsdk-<inject key="DeploymentID" enableCopy="false"/> (2)**
     - Service name: **aisearch-<inject key="DeploymentID" enableCopy="false"/> (3)**
@@ -122,7 +122,6 @@ In this task, you will create a Azure AI Search service. You need an Azure AI Se
     - Pricing tier: **Standard (5)**
 
       ![](../media/af13.png)
-
 1. Click on **Create** on *Review+create* page.
 
     ![](../media/af14.png)
@@ -241,15 +240,17 @@ In this task, you will set up and configure the necessary environment variables 
 
 1. Press **Ctrl+S** to save the file.
 
-### Summary
+### Review
+
+This exercise guided participants through setting up a project in Azure AI Foundry, deploying and managing AI models, and creating an Azure AI Search service for efficient data retrieval. They integrated the search service with their project, cloned a GitHub repository containing necessary resources, and configured environment variables to ensure seamless execution.
 
 In this exercise, you have accomplished the following:
-- Task 1: Create a project
-- Task 2: Deploying and Managing AI Models
-- Task 3: Create an Azure AI Search service
-- Task 4: Connect the Azure AI Search to your project
-- Task 5: Clone the GitHub repository for the project
-- Task 6: Configure environment variables
+- Task 1: Created a project
+- Task 2: Deployed and Managed AI Models
+- Task 3: Created an Azure AI Search service
+- Task 4: Connected the Azure AI Search to your project
+- Task 5: Cloned the GitHub repository for the project
+- Task 6: Configured environment variables
 
 ### You have successfully finished the exercise. Click **Next** to continue to the next exercise.
 
