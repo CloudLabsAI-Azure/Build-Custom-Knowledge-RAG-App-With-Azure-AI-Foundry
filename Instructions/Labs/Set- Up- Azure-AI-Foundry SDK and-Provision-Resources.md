@@ -114,14 +114,14 @@ In this task, you will create a Azure AI Search service. You need an Azure AI Se
 1. Right click on [Create an Azure AI Search service](https://portal.azure.com/#create/Microsoft.Search) , click on **Copy link** and then paste it on the LabVM browser to create Azure AI Search service in the Azure portal.
 
 1. On the **Create a search service** page, provide the following details then click on **Review + create (6)**:
-        
-     - Subscription: **Leave your default subscription (1)**
-     - Resource group: Select **ragsdk-<inject key="DeploymentID" enableCopy="false"/> (2)**
-     - Service name: **aisearch-<inject key="DeploymentID" enableCopy="false"/> (3)**
-     - Location: **<inject key="Region" enableCopy="false"/> (4)**
-     - Pricing tier: **Standard (5)**
+            
+    - Subscription: **Leave your default subscription (1)**
+    - Resource group: Select **ragsdk-<inject key="DeploymentID" enableCopy="false"/> (2)**
+    - Service name: **aisearch-<inject key="DeploymentID" enableCopy="false"/> (3)**
+    - Location: **<inject key="Region" enableCopy="false"/> (4)**
+    - Pricing tier: **Standard (5)**
 
-       ![](../media/af13.png)
+      ![](../media/af13.png)
       
 1. Click on **Create** on *Review+create* page.
 
