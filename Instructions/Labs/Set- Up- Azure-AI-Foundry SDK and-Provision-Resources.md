@@ -96,16 +96,12 @@ In this task, you will deploy models in your Azure AI Foundry project. As you ne
 
     - Deployment type: **Standard (1)**
       
-      ![](../media/rg1.png)  
+      ![](../media/rg8.png)  
       
     - Tokens per Minite Rate limit: **20k (2)**
     - Click on **Deploy (3)**
 
       ![](../media/rg3.png)        
-
-1. Click on **Deploy** again.
-
-    ![](../media/af12.png)
 
 1. Click on **Models+Endpoints (1)**, you can see the deployed models **(2)**.
 
@@ -132,11 +128,11 @@ In this task, you will create a Azure AI Search service. You need an Azure AI Se
     - Location: **<inject key="Region" enableCopy="false"/> (4)**
     - Pricing tier: **Standard (5)**
 
-      ![](../media/af13.png)
+      ![](../media/rg4.png)
       
 1. Click on **Create** on *Review+create* page.
 
-    ![](../media/af14.png)
+    ![](../media/rg5.png)
 
 1. Wait for the deployment to complete.
 
@@ -154,7 +150,7 @@ In this task, you will connect the Azure AI Search to your project. Azure AI Sea
 
 1. Navigate back to **Azure AI Foundary** portal, select **Management center** from the left pane.
 
-    ![](../media/af16.png)
+    ![](../media/rg6.png)
 
 1. Select **Connected resources (1)** under the **Project(ContosoTrek)** section, then select **+ New connection (2)**.
 
