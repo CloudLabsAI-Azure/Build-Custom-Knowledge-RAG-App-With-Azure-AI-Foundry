@@ -23,7 +23,7 @@ In this task, you will index knowledge sources by processing and storing vectori
 
     ![](../media/af-34.png)
 
-1. Go through the following code list, as it contains:
+1. Go through the following code list as it contains:
 
     - Code to import the required libraries, create a project client, and configure some settings:
 
@@ -67,15 +67,15 @@ In this task, you will index knowledge sources by processing and storing vectori
 
 1. Minimize the Visual Studio Code window.
 
-    - Select **Work or school account (1)** and click on **Continue (2).**
+    - Select **Work or School account (1)** and click **Continue (2).**
 
       ![](../media/af37.png)    
 
-    - Enter the **Username <inject key="AzureAdUserEmail"></inject> (1)**,  then click on **Next (2).**
+    - Enter the **Username <inject key="AzureAdUserEmail"></inject> (1)**,  then click **Next (2).**
 
       ![](../media/af38.png)  
 
-    - Enter the **Password <inject key="AzureAdUserPassword"></inject> (1)**,  then click on **Sign in (2).**
+    - Enter the **Password <inject key="AzureAdUserPassword"></inject> (1)**, then click **Sign in (2).**
 
       ![](../media/af39.png)    
 
@@ -83,7 +83,7 @@ In this task, you will index knowledge sources by processing and storing vectori
 
       ![](../media/af40.png)      
 
-1. Navigate back to the Visual Studio code terminal and press **Enter** to accept the default subscription.
+1. Navigate back to the Visual Studio Code terminal and press **Enter** to accept the default subscription.
 
     ![](../media/af-41.png)
 
@@ -99,7 +99,7 @@ In this task, you will index knowledge sources by processing and storing vectori
 
 In this task, you will implement the retrieval pipeline by extracting relevant product documents from the search index. You will configure and execute a script that transforms user queries into search requests, retrieving the most relevant results from the indexed knowledge source.
 
-1. Select the **get_product_documents.py** file, containing the script to get product documents from the search index.
+1. Select the **get_product_documents.py** file containing the script to get product documents from the search index.
 
     ![](../media/af43.png)
 
@@ -161,7 +161,7 @@ In this task, you will enable telemetry logging by integrating Application Insig
 
     ![](../media/af50.png)
 
-1. Navigate back to the VS Code terminal and run the below command to install the: `azure-monitor-opentelemetry`:
+1. Navigate back to the VS Code terminal and run the below command to install the `azure-monitor-opentelemetry`
 
    ```bash
    pip install azure-monitor-opentelemetry
