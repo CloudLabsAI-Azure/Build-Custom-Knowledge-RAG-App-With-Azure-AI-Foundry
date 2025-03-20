@@ -1,6 +1,6 @@
 # Exercise 01: Developing a Custom RAG App Using Azure AI Foundry
 
-## Estimated Time: 4 Hour
+## Estimated Time: 4 Hours
 
 ## Lab Scenario
 
@@ -51,7 +51,7 @@ In this task, you will create a new project in Azure AI Foundry and configure th
 
       ![](../media/af6.png)     
 
-1. Click on **Create** on the *Review and finish* page.
+1. Click on **Create** on the **Review and finish** page.
 
     ![](../media/af4.png)
 
@@ -145,7 +145,7 @@ In this task, you will connect the Azure AI Search service to your project. Azur
 
     ![](../media/af16.png)
 
-1. Select **Connected resources (1)** under the **Project(ContosoTrek)** section, then select **+ New connection (2)**.
+1. Select **Connected resources (1)** under the **Project (ContosoTrek)** section, then select **+ New connection (2)**.
 
     ![](../media/af17.png)
 
@@ -169,7 +169,7 @@ In this task, you will clone the GitHub repository for the project to access the
 
     ![](../media/af81.png)
 
-1. Click on the **ellipses(...) (1)**, click on **Terminal (2),** and then click on **New Terminal (3)**.
+1. Click on the **ellipses (...) (1)**, select **Terminal (2),** and then click on **New Terminal (3)**.
 
     ![](../media/af21.png)
 
