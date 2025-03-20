@@ -1,4 +1,3 @@
-
 ## Exercise 2: Build a Retrieval-Augmented Generation (RAG) Pipeline
 
 In this exercise, you will enhance a basic chat application by integrating a Retrieval-Augmented Generation (RAG) pipeline. This includes indexing knowledge sources, implementing a retrieval mechanism, generating responses with augmented knowledge, and adding telemetry logging to monitor performance and accuracy.
@@ -16,15 +15,15 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will index knowledge sources by processing and storing vectorized data from a CSV file using a search index. You will also authenticate your Azure account, execute the indexing script, and register the index to your cloud project.
 
-1. Expand **assets (1)** folder, select **products.csv** file **(2)**. This file contains the  example data set that will be used in your chat app.
+1. Expand the **assets (1)** folder and select **products.csv** file **(2)**. This file contains examples of all data sets to be used in your chat app.
 
     ![](../media/af35.png)
 
-1. Select **create_search_index.py**, this file is used to store vectorized data from the embeddings model.  
+1. Select **create_search_index.py**, which stores vectorized data from the embeddings model.  
 
     ![](../media/af-34.png)
 
-1. Go through the code, as it contains:
+1. Go through the following code list, as it contains:
 
     - Code to import the required libraries, create a project client, and configure some settings:
 
@@ -42,7 +41,7 @@ In this task, you will index knowledge sources by processing and storing vectori
       </create_search_index>
        ```
 
-    - Code to create the function to add a csv file to the index:    
+    - Code to create the function to add a CSV file to the index:    
 
       ```bash
       </add_csv_to_index>
@@ -50,7 +49,7 @@ In this task, you will index knowledge sources by processing and storing vectori
       </add_csv_to_index>
       ```
 
-    - Code to run the functions, to build the index and register it to the cloud project:  
+    - Code to run the functions, build the index, and register it to the cloud project:  
 
       ```bash
       <test_create_index>
@@ -58,7 +57,7 @@ In this task, you will index knowledge sources by processing and storing vectori
       </test_create_index>
       ```    
 
-1. From your console, log in to your Azure account and follow instructions for authenticating your account:
+1. From your console, log in to your Azure account and follow the instructions for authenticating your account:
 
     ```bash
     az login
@@ -66,25 +65,25 @@ In this task, you will index knowledge sources by processing and storing vectori
 
     ![](../media/af36.png)
 
-1. Minimize the Visual Studio Code window,
+1. Minimize the Visual Studio Code window.
 
-    - Select **Work or school account (1)**, click on **Continue (2)**
+    - Select **Work or school account (1)** and click on **Continue (2).**
 
       ![](../media/af37.png)    
 
-    - Enter the **Username: <inject key="AzureAdUserEmail"></inject> (1)**,  then click on **Next (2)**
+    - Enter the **Username <inject key="AzureAdUserEmail"></inject> (1)**,  then click on **Next (2).**
 
       ![](../media/af38.png)  
 
-    - Enter the **Password: <inject key="AzureAdUserPassword"></inject> (1)**,  then click on **Sign in (2)**
+    - Enter the **Password <inject key="AzureAdUserPassword"></inject> (1)**,  then click on **Sign in (2).**
 
       ![](../media/af39.png)    
 
-    - Click on **No, sign in to this app only**
+    - Click on **No, sign in to this app only.**
 
       ![](../media/af40.png)      
 
-1. Navigate back to the Visual Studio code terminal, press **Enter** to accept th default subscription.
+1. Navigate back to the Visual Studio code terminal and press **Enter** to accept the default subscription.
 
     ![](../media/af-41.png)
 
@@ -100,21 +99,21 @@ In this task, you will index knowledge sources by processing and storing vectori
 
 In this task, you will implement the retrieval pipeline by extracting relevant product documents from the search index. You will configure and execute a script that transforms user queries into search requests, retrieving the most relevant results from the indexed knowledge source.
 
-1. Select **get_product_documents.py** file, this file contains script to get product documents from the search index.
+1. Select the **get_product_documents.py** file, containing the script to get product documents from the search index.
 
     ![](../media/af43.png)
 
-    - This file contains the code to import the required libraries, create a project client, and configure settings
-    - Code to add the function to get product documents
-    - Finally, add code to test the function when you run the script directly
+    - This file contains the code to import the required libraries, create a project client, and configure settings.
+    - Code to add the function to get product documents.
+    - Finally, add code to test the function when you run the script directly.
 
-1. Expand **assets (1)**, select **intent_mapping.prompty (2)**. This template instructs how to extract the user's intent from the conversation.      
+1. Expand **assets (1)** and select **intent_mapping.prompty (2)**. This template instructs how to extract the user's intent from the conversation.      
 
     ![](../media/af44.png)
 
-    - The **get_product_documents.py** script uses this prompt template to convert the conversation to a search query
+    - The **get_product_documents.py** script uses this prompt template to convert the conversation to a search query.
 
-1. Now run the below command in the terminal, to test out what documents the search index returns from a query.
+1. Now, run the command below in the terminal to test what documents the search index returns from a query.
 
     ```bash
     python get_product_documents.py --query "I need a new tent for 4 people, what would you recommend?"
@@ -126,21 +125,21 @@ In this task, you will implement the retrieval pipeline by extracting relevant p
 
 In this task, you will generate responses using augmented knowledge by leveraging retrieved product documents. You will run a script that integrates retrieval-augmented generation (RAG) capabilities to provide relevant and grounded responses based on user queries.
 
-1. Select **chat_with_products.py** file. This script retrieves product documents and generates a response to a user's question.
+1. Select the **chat_with_products.py** file. This script retrieves product documents and generates a response to a user's question.
 
     ![](../media/af46.png)
 
-    - This script contains code to import the required libraries, create a project client, and configure settings   
-    - Code to create the chat function that uses the RAG capabilities
-    - Finally, add the code to run the chat function 
+    - This script contains code to import the required libraries, create a project client, and configure settings.   
+    - Code to generate the chat function that uses the RAG capabilities.
+    - Finally, add the code to run the chat function. 
 
-1. Expand **assets (1)** folder, select  **grounded_chat.prompty (2)**. This template instructs how to generate a response based on the user's question and the retrieved documents
+1. Expand the **assets (1)** folder and select **grounded_chat.prompty (2)**. This template instructs how to generate a response based on the user's question and the retrieved documents.
 
     ![](../media/af47.png)
 
-    - The **chat_with_products.py** script calls this prompt template to generate a response to the user's question
+    - The **chat_with_products.py** script calls this prompt template to create a response to the user's question.
 
-1. Run the below command in the terminal, to run the script to test your chat app with RAG capabilities.
+1. Run the command below in the terminal to use the script and test your chat app with RAG capabilities.
 
     ```bash
     python chat_with_products.py --query "I need a new tent for 4 people, what would you recommend?"
@@ -148,13 +147,13 @@ In this task, you will generate responses using augmented knowledge by leveragin
 
      ![](../media/af48.png)  
 
-### Task 4: Add telemetry logging
+### Task 4: Add Telemetry Logging
 
 In this task, you will enable telemetry logging by integrating Application Insights into your project. This allows you to monitor and analyze your RAG application's performance, track queries, and log response details for better observability and debugging.
 
-1. Navigate back to **Azure AI Foundary** portal.
+1. Navigate back to the **Azure AI Foundry** portal.
 
-1. Select **Tracing (1)** tab, to add an Application Insights resource to your project and then click on **Create new (2)** to create a new resource.
+1. Select the **Tracing (1)** tab to add an **Application Insights** resource to your project, and then click on the **Create new (2)** option to create a new resource.
 
     ![](../media/af49.png)
 
@@ -162,7 +161,7 @@ In this task, you will enable telemetry logging by integrating Application Insig
 
     ![](../media/af50.png)
 
-1. Navigate back to the VS Code terminal, run the below command to install the `azure-monitor-opentelemetry`:
+1. Navigate back to the VS Code terminal and run the below command to install the: `azure-monitor-opentelemetry`:
 
    ```bash
    pip install azure-monitor-opentelemetry
@@ -170,7 +169,7 @@ In this task, you will enable telemetry logging by integrating Application Insig
 
     ![](../media/af51.png)   
 
-     >**Note:** Wait for the installation to complete, this might take some time
+     >**Note:** Wait for the installation to complete. This might take some time.
 
 1. Add the `--enable-telemetry` flag when you use the `chat_with_products.py` script:
 
@@ -184,21 +183,21 @@ In this task, you will enable telemetry logging by integrating Application Insig
 
     ![](../media/af53.png)
 
-1. This will take you to the **Azure AI Foundary** portal, **Tracing** tab where you can see the telemetry data in your Application Insights resource. 
+1. This will take you to the **Azure AI Foundry** portal, **Tracing** tab, where you can see the telemetry data in your Application Insights resource. 
 
     ![](../media/af54.png)
 
-     >**Note:** If it doesn't appear right away, select **Refresh** in the toolbar. It may take around 5 minutes to appear.
+     >**Note:** If it does not appear immediately, select **Refresh** in the toolbar. It may take around 5 minutes to appear.
 
 1. In your project, you can **filter** your traces as you see fit. Click on **Filter**.
 
     ![](../media/af55.png)
 
-1. Click on **+ Add filter**, set the filter to **Success (1)**, **Equal to (2)** -> **True (3)** and then click on **Apply (4)**.
+1. Click on **+ Add filter**, set the filter to **Success (1)**, **Equal to (2)** -> **True (3),** and then click on **Apply (4)**.
 
     ![](../media/af56.png)
 
-1. Now you can only see the data with Success as **True**.
+1. Now, you can only see the data with Success as **True**.
 
     ![](../media/af57.png)
 
@@ -206,7 +205,7 @@ In this task, you will enable telemetry logging by integrating Application Insig
 
 This exercise focused on building a Retrieval-Augmented Generation (RAG) pipeline by indexing knowledge sources and implementing an efficient retrieval system. Participants generated AI responses enriched with relevant data and integrated telemetry logging to monitor and optimize system performance.
 
-In this exercise, you have accomplished the following:
+In this exercise, you have accomplished the following tasks:
 - Task 1: Indexed Knowledge Sources
 - Task 2: Implemented the Retrieval Pipeline
 - Task 3: Generated Responses with Augmented Knowledge
