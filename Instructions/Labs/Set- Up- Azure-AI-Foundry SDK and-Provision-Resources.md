@@ -1,10 +1,10 @@
 # Lab : Developing a Custom RAG App Using Azure AI Foundry
 
-## Estimated time: 4 hour
+## Estimated Time: 4 Hour
 
 ## Lab scenario
 
-In this Hands-On Lab, you will learn how to build a custom Retrieval-Augmented Generation (RAG) application using the Azure AI Foundry SDK. You will begin by setting up the required Azure resources and configuring the AI Foundry environment. Then, you will implement a RAG pipeline that indexes and retrieves relevant data to enhance AI-generated responses. Finally, you will evaluate and optimize the system’s performance by measuring retrieval accuracy, response quality, and efficiency. By the end of the session, you will have a functional RAG solution that integrates Azure AI capabilities for enhanced knowledge retrieval and response generation. 
+In this hands-on lab, you will learn how to build a custom Retrieval-Augmented Generation (RAG) application using the Azure AI Foundry SDK. You will begin by setting up the required Azure resources and configuring the AI Foundry environment. Then, you will implement an RAG pipeline that indexes and retrieves relevant data to enhance AI-generated responses. Finally, you will evaluate and optimize the system’s performance by measuring retrieval accuracy, response quality, and efficiency. By the end of the session, you will have a functional RAG solution that integrates Azure AI capabilities for enhanced knowledge retrieval and response generation. 
 
 ## Lab Objectives
 
@@ -20,9 +20,9 @@ In this exercise, you will set up the Azure AI Foundry SDK and provision the nec
 
 ### Task 1: Create a project
 
-In this task, you will create a new project in Azure AI Foundry, configure the required resources.
+In this task, you will create a new project in Azure AI Foundry, and configure the required resources.
 
-1. Navigate to the Home page of **Azure AI Foundry** by right-clicking on [Azure AI Foundry](https://ai.azure.com), selecting **Copy link**, and pasting it into your browser.
+1. Navigate to the home page of **Azure AI Foundry** by right-clicking on [Azure AI Foundry](https://ai.azure.com), selecting the **Copy link** option, and pasting it into your browser.
 
 1. Click on **Sign in**.
 
