@@ -1,4 +1,4 @@
-# Lab 01: Developing a Custom RAG App Using Azure AI Foundry
+# Exercise 01: Developing a Custom RAG App Using Azure AI Foundry
 
 ## Estimated Time: 4 Hour
 
