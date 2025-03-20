@@ -11,26 +11,26 @@ In this exercise, you will complete the following tasks:
 - Task 2: Implementing Evaluation Methods
 - Task 3: Interpreting Results and Fine-Tuning 
 
-### Task 1: Evaluate with Azure AI evaluators
+### Task 1: Evaluate with Azure AI Evaluators
 
 In this task, you will evaluate the RAG pipeline using Azure AI evaluators by analyzing key metrics such as coherence, relevance, and groundedness. You will modify the evaluation script to incorporate these metrics and log the results for further analysis.
 
-1. Navigate back to the **Visual Studio Code**. 
+1. Navigate back to **Visual Studio Code**. 
 
-1. Expand **assets (1)** folder, select **chat_eval_data.jsonl (2)**. This is a evaluation dataset, which contains example questions and expected answers (truth).
+1. Expand the **assets (1)** folder and select **chat_eval_data.jsonl (2)**. This is an evaluation dataset, which contains example questions and expected answers (truth).
 
     ![](../media/af58.png)
 
-1. Select **evaluate.py** file.
+1. Select the **evaluate.py** file.
 
     ![](../media/af59.png)
 
-    - This script allows you to review the results locally, by outputting the results in the command line, and to a json file
+    - This script allows you to review the results locally by outputting them in the command line and putting them in a JSON file.
     - This script also logs the evaluation results to the cloud project so that you can compare evaluation runs in the UI.
 
-1. To get the `Coherence`, `Relevance` along with the `Groundedness` metric, add the following code to the **evaluate.py** file.    
+1. To get `Coherence` and `Relevance` metrics along with `Groundedness`, add the following code to the **evaluate.py** file.    
 
-1. Add the below import statement in the `<imports_and_config>` section, around 10th or 11th line before `# load environment variables from the .env file at the root of this repo`.
+1. Add the below import statement in the `<imports_and_config>` section, around the 10th or 11th line, before `# load environment variables from the .env file at the root of this repo`.
 
     ```bash
     from azure.ai.evaluation import CoherenceEvaluator, RelevanceEvaluator
@@ -38,7 +38,7 @@ In this task, you will evaluate the RAG pipeline using Azure AI evaluators by an
 
      ![](../media/af60.png)    
 
-1. Scroll down, add the below code before `# </imports_and_config>`.
+1. Scroll down and add the below code before `# </imports_and_config>`.
 
     ```bash
     coherence = CoherenceEvaluator(evaluator_model)
@@ -47,7 +47,7 @@ In this task, you will evaluate the RAG pipeline using Azure AI evaluators by an
 
      ![](../media/af61.png)    
 
-1. Scroll down to `<run_evaluation>` section, around `69th` or `70th` line then add the following code below `"groundedness": groundedness`.
+1. Scroll down to the `<run_evaluation>` section, and around the `69th` or `70th` line, add the following code below `"groundedness": groundedness`.
 
     ```bash
     "coherence": coherence, 
@@ -60,9 +60,9 @@ In this task, you will evaluate the RAG pipeline using Azure AI evaluators by an
 
 ### Task 2: Implementing Evaluation Methods      
 
-In this task, you will implement evaluation methods to assess the performance of your RAG pipeline. You will install necessary dependencies, run the evaluation script, and analyze metrics such as Groundedness, Coherence, and Relevance to ensure response quality.
+In this task, you will implement evaluation methods to assess the performance of your RAG pipeline. You will install the necessary dependencies, run the evaluation script, and analyze metrics such as Groundedness, Coherence, and Relevance to ensure response quality.
 
-1. From your console, run the below command to install the required package for running evaluation script:
+1. From your console, run the below command to install the required package for running the evaluation script:
 
     ```bash
     pip install azure-ai-evaluation[remote]
@@ -80,13 +80,13 @@ In this task, you will implement evaluation methods to assess the performance of
 
      ![](../media/af66.png)  
 
-      >**Note**: If you encounter any error like **ImportError: cannot import name '_T' from 'marshmallow.fields'**, please run the below command to downgrade marshmallow.
+      >**Note**: If you encounter any error like **ImportError: cannot import name '_T' from 'marshmallow.fields'**, please run the command below to downgrade marshmallow.
 
       ```bash
       pip install --upgrade marshmallow==3.20.2
       ```
 
-1. Once the upgarde is completed, rerun the below command again.
+1. Once the upgrade is completed, rerun the command below.
 
     ```bash
     python evaluate.py
@@ -98,7 +98,7 @@ In this task, you will implement evaluation methods to assess the performance of
 
       >**Note**: You might see some time-out errors, which are expected. The evaluation script is designed to handle these errors and continue running.  
 
-1. In the console output, you see an answer for each question, followed by a table with summarized metrics. (You might see different columns in your output.)
+1. In the console output, you will see an answer for each question, followed by a table with summarized metrics. (You might see different columns in your output.)
 
     ```Text
     ====================================================
@@ -132,25 +132,25 @@ In this task, you will implement evaluation methods to assess the performance of
 
 ### Task 3: Interpreting Results and Fine-Tuning         
 
-In this task, you will interpret the evaluation results and fine-tune the RAG pipeline by adjusting the prompt template. You will analyze the **Relevance, Groundedness, and Coherence** scores, modify the prompt instructions, and re-run the evaluation to improve response accuracy.
+In this task, you will interpret the evaluation results and fine-tune the RAG pipeline by adjusting the prompt template. You will analyze the **Relevance, Groundedness, and Coherence** scores, modify the prompt instructions, and rerun the evaluation to improve response accuracy.
 
-1. Once the evaluation run completes, **Ctrl+click** on the link to view the evaluation results on the Evaluation page in the Azure AI Foundry portal **(1)**, then click on **Open (2)**.
+1. Once the evaluation run is complete, **Ctrl+click** on the link to view the evaluation results on the Evaluation page in the Azure AI Foundry portal **(1)**, then click on **Open (2)**.
 
     ![](../media/af68.png)
 
-1. On the **Report** tab, you can view the RAG App quality through the Metric dashbaoard.
+1. On the **Report** tab, you can view the RAG App quality through the Metric dashboard.
 
-1. You can view the `Relevance, Groundedness` and `Coherence` average score.
+1. You can view the average score for `Relevance, Groundedness`, and `Coherence`.
 
     ![](../media/af71.png)
 
-1. Navigate to **Data (1)** tab, to get more details about the evaluation metric **(2)**.
+1. Navigate to the **Data (1)** tab for more details about the evaluation metric **(2)**.
 
     ![](../media/af73.png)
 
-1. Notice that the responses are not well grounded. In many cases, the model replies with a question rather than an answer. This is a result of the prompt template instructions.
+1. Notice that the responses are not well grounded. The model often replies with a question rather than an answer. This is a result of the prompt template instructions.
 
-1. In your **assets/grounded_chat.prompty (1)** file, find the sentence `If the question is not related to outdoor/camping gear and clothing, just say 'Sorry, I only can answer queries related to outdoor/camping gear and clothing. So, how can I help?'`. **(2)**
+1. In your **assets/grounded_chat.prompty (1)** file, find the sentence, `"If the question is not related to outdoor/camping gear and clothing, just say 'Sorry, I only can answer queries related to outdoor/camping gear and clothing. So, how can I help?"`. **(2)**
 
     ![](../media/af74.png)
 
@@ -160,7 +160,7 @@ In this task, you will interpret the evaluation results and fine-tune the RAG pi
 
 1. Press **Ctrl+S** to save the file.
 
-1. Re-run the evaluation script.    
+1. Rerun the evaluation script.    
 
     ```bash
     python evaluate.py
@@ -168,21 +168,20 @@ In this task, you will interpret the evaluation results and fine-tune the RAG pi
 
      >**Note**: Expect the evaluation to take around 5 - 10 minutes to complete.  
 
-     >**Note**: If you weren't able to increase the tokens per minute limit for your model, you might see some time-out errors, which are expected. The evaluation script is designed to handle these errors and continue running.
+     >**Note**: If you cannot increase the tokens per minute limit for your model, you might see some time-out errors, which are expected. The evaluation script is designed to handle these errors and continue running.
 
-1. Once the evaluation run completes, **Ctrl+click** on the link to view the evaluation results on the Evaluation page in the Azure AI Foundry portal **(1)**, then click on **Open (2)**.
+1. Once the evaluation run is complete, **Ctrl+click** on the link to view the evaluation results on the Evaluation page in the Azure AI Foundry portal **(1)**, then click on **Open (2)**.
 
     ![](../media/af68.png)    
 
-1. On the **Report** tab, you can view the `Relevance, Groundedness` and `Coherence` average score. As it is increased than before.
-
+1. On the **Report** tab, you can view the `Relevance, Groundedness`, and `Coherence` average scores, which have increased more than before.
     ![](../media/af78.png)    
 
-1. Navigate to **Data (1)** tab, to get more details about the evaluation metric **(2)**.
+1. Navigate to the **Data (1)** tab for more details about the evaluation metric **(2)**.
 
     ![](../media/af79.png)    
 
-1. Try other modifications to the prompt template, to see how the changes affect the evaluation results.    
+1. Try other prompt template modifications to see how the changes affect the evaluation results.    
 
 ### Review
 
