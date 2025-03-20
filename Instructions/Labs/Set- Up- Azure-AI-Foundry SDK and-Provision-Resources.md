@@ -92,6 +92,17 @@ In this task, you will deploy models in your Azure AI Foundry project. As you ne
 
     ![](../media/af11.png)
 
+1. On the **Deploy model text-embedding-ada-002**,
+
+    - Deployment type: **Standard (1)**
+      
+      ![](../media/rg1.png)  
+      
+    - Tokens per Minite Rate limit: **20k (2)**
+    - Click on **Deploy (3)**
+
+      ![](../media/rg3.png)        
+
 1. Click on **Deploy** again.
 
     ![](../media/af12.png)
