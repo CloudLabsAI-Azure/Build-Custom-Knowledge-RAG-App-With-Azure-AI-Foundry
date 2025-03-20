@@ -185,7 +185,7 @@ In this task, you will interpret the evaluation results and fine-tune the RAG pi
 
 ### Review
 
-This exercise focused on evaluating and optimizing the performance of a Retrieval-Augmented Generation (RAG) system. Participants used Azure AI evaluators to assess retrieval accuracy, implemented evaluation methods to measure response quality, and interpreted results to fine-tune the system for improved efficiency and relevance.
+This exercise focused on evaluating and optimizing the performance of a Retrieval-Augmented Generation (RAG) system. Participants used Azure AI evaluators to assess retrieval accuracy, implemented evaluation methods to measure response quality and interpreted results to fine-tune the system for improved efficiency and relevance.
 
 In this exercise, you have accomplished the following:
 - Task 1: Evaluated with Azure AI evaluators
