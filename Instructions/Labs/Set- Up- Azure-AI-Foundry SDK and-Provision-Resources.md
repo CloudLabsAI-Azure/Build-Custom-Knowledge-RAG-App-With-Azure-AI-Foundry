@@ -190,7 +190,7 @@ In this task, you will clone the GitHub repository for the project to access the
 
 1. Click on **File (1)** from the top left corner, then select **Open Folder (2)**.
 
-    ![](../media/af23.png)
+    ![](../media/rg9.png)
 
 1. Navigate to **C:\Users\demouser\Downloads (1)** press **Enter**, select **ContosoTrek (2)** and then click on **Select Folder (3)**.
 
