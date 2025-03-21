@@ -92,20 +92,27 @@ In this task, you will deploy models in your Azure AI Foundry project. You need 
 
     ![](../media/af11.png)
 
-1. Click on **Deploy** again.
+1. On the **Deploy model text-embedding-ada-002**,
 
-    ![](../media/af12.png)
+    - Deployment type: **Standard (1)**
+      
+      ![](../media/rg8.png)  
+      
+    - Tokens per Minite Rate limit: **20k (2)**
+    - Click on **Deploy (3)**
+
+      ![](../media/rg3.png)  
 
 1. Click on **Models+Endpoints (1)**, you can see the deployed models **(2)**.
 
     ![](../media/af-15.png)
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:    
-   - Hit the validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="9712c051-408a-4142-9efa-0337dca323d9" />
 
-   <validation step="9712c051-408a-4142-9efa-0337dca323d9" />    
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.   
 
 ### Task 3: Create an Azure AI Search Service
 
@@ -121,11 +128,11 @@ In this task, you will create an Azure AI Search service. You need an Azure AI S
     - Location: **<inject key="Region" enableCopy="false"/> (4)**
     - Pricing tier: **Standard (5)**
 
-      ![](../media/af13.png)
+      ![](../media/rg4.png)
       
 1. Click on **Create** on the **Review+create** page.
 
-    ![](../media/af14.png)
+    ![](../media/rg5.png)
 
 1. Wait for the deployment to complete.
 
@@ -143,7 +150,7 @@ In this task, you will connect the Azure AI Search service to your project. Azur
 
 1. Navigate back to the **Azure AI Foundry** portal, and select **Management center** from the left pane.
 
-    ![](../media/af16.png)
+    ![](../media/rg6.png)
 
 1. Select **Connected resources (1)** under the **Project (ContosoTrek)** section, then select **+ New connection (2)**.
 
@@ -183,7 +190,7 @@ In this task, you will clone the GitHub repository for the project to access the
 
 1. Click on **File (1)** from the top left corner, then select **Open Folder (2)**.
 
-    ![](../media/af23.png)
+    ![](../media/rg9.png)
 
 1. Navigate to **C:\Users\demouser\Downloads (1),** press **Enter**, select **ContosoTrek (2),** and then click on **Select Folder (3)**.
 

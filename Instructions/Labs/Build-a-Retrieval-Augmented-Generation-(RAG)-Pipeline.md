@@ -81,7 +81,7 @@ In this task, you will index knowledge sources by processing and storing vectori
 
     - Click on **No, sign in to this app only.**
 
-      ![](../media/af40.png)      
+      ![](../media/rg10.png)      
 
 1. Navigate back to the Visual Studio Code terminal and press **Enter** to accept the default subscription.
 
@@ -193,9 +193,9 @@ In this task, you will enable telemetry logging by integrating Application Insig
 
     ![](../media/af55.png)
 
-1. Click on **+ Add filter**, set the filter to **Success (1)**, **Equal to (2)** -> **True (3),** and then click on **Apply (4)**.
+1. Click on **+ Add filter**, set the filter to **Status (1)**, **Equal to (2)** -> **True (3),** and then click on **Apply (4)**.
 
-    ![](../media/af56.png)
+    ![](../media/rg7.png)
 
 1. Now, you can only see the data with Success as **True**.
 
