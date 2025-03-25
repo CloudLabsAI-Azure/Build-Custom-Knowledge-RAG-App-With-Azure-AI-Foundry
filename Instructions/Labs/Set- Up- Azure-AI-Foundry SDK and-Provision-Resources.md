@@ -1,10 +1,10 @@
-# Lab : Developing a Custom RAG App Using Azure AI Foundry
+# Exercise 01: Developing a Custom RAG App Using Azure AI Foundry
 
-## Estimated time: 4 hour
+## Estimated Time: 4 Hours
 
-## Lab scenario
+## Lab Scenario
 
-In this Hands-On Lab, you will learn how to build a custom Retrieval-Augmented Generation (RAG) application using the Azure AI Foundry SDK. You will begin by setting up the required Azure resources and configuring the AI Foundry environment. Then, you will implement a RAG pipeline that indexes and retrieves relevant data to enhance AI-generated responses. Finally, you will evaluate and optimize the system’s performance by measuring retrieval accuracy, response quality, and efficiency. By the end of the session, you will have a functional RAG solution that integrates Azure AI capabilities for enhanced knowledge retrieval and response generation. 
+In this hands-on lab, you will learn how to build a custom Retrieval-Augmented Generation (RAG) application using the Azure AI Foundry SDK. You will begin by setting up the required Azure resources and configuring the AI Foundry environment. Then, you will implement an RAG pipeline that indexes and retrieves relevant data to enhance AI-generated responses. Finally, you will evaluate and optimize the system’s performance by measuring retrieval accuracy, response quality, and efficiency. By the end of the session, you will have a functional RAG solution that integrates Azure AI capabilities for enhanced knowledge retrieval and response generation. 
 
 ## Lab Objectives
 
@@ -18,17 +18,17 @@ In this lab, you will complete the following exercises:
 
 In this exercise, you will set up the Azure AI Foundry SDK and provision the necessary resources to support your RAG pipeline. This includes configuring the environment, deploying foundation models, and ensuring seamless integration with Azure AI services for knowledge retrieval and inference.
 
-### Task 1: Create a project
+### Task 1: Create a Project
 
-In this task, you will create a new project in Azure AI Foundry, configure the required resources.
+In this task, you will create a new project in Azure AI Foundry and configure the required resources.
 
-1. Navigate to the Home page of **Azure AI Foundry** by right-clicking on [Azure AI Foundry](https://ai.azure.com), selecting **Copy link**, and pasting it into your browser.
+1. Navigate to the home page of **Azure AI Foundry** by right-clicking on [Azure AI Foundry](https://ai.azure.com), selecting the **Copy link** option, and pasting it into your browser.
 
 1. Click on **Sign in**.
 
     ![](../media/af1.png) 
 
-     >**Note**: Select **Got it**, if you get any pop up like **Streamlined from the start**.
+     >**Note**: Select **Got it**, on the pop-up **Streamlined from the start**.
 
 1. Select **+ Create project**.
 
@@ -42,7 +42,7 @@ In this task, you will create a new project in Azure AI Foundry, configure the r
 
     - Hub name: **ContosoHub (1)**
 
-      >**Note**: If you see a permission error, just ignore it. It will go away after selecting the required resource group.
+      >**Note**: If you see a permission error, ignore it. It will go away after selecting the required resource group.
 
     - Subscription: **Leave the default subscription (2)**
     - Resource group: Select **ragsdk-<inject key="DeploymentID" enableCopy="false"/> (3)** 
@@ -51,7 +51,7 @@ In this task, you will create a new project in Azure AI Foundry, configure the r
 
       ![](../media/af6.png)     
 
-1. Click on **Create** on *Review and finish* page.
+1. Click on **Create** on the **Review and finish** page.
 
     ![](../media/af4.png)
 
@@ -59,10 +59,10 @@ In this task, you will create a new project in Azure AI Foundry, configure the r
 
     ![](../media/af5.png)
 
-     >**Note**: If you get any pop up, please **close**.
+     >**Note**: Please **close** further pop-ups.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:    
-   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+   - Hit the validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
@@ -70,7 +70,7 @@ In this task, you will create a new project in Azure AI Foundry, configure the r
 
 ### Task 2: Deploying and Managing AI Models 
 
-In this task, you will deploy models in your Azure AI Foundry project. As you need two models to build a RAG-based chat app: an Azure OpenAI chat model (gpt-4o-mini) and an Azure OpenAI embedding model (text-embedding-ada-002).
+In this task, you will deploy models in your Azure AI Foundry project. You need two models to build a RAG-based chat app: an Azure OpenAI chat model (GPT-4o-mini) and an Azure OpenAI embedding model (text-embedding-ada-002).
 
 1. On the left navigation pane, select **Model catalog (1)**. Search for **gpt-4o-mini (2)** and then select **gpt-4o-mini (3)**.
 
@@ -84,7 +84,7 @@ In this task, you will deploy models in your Azure AI Foundry project. As you ne
 
     ![](../media/af9.png)
 
-1. Click on **Model catalog (1)** twice, search for **text-embedding-ada-002 (2)** and then select **text-embedding-ada-002 (3)**.
+1. Click on the **Model catalog (1)** option twice, search for **text-embedding-ada-002 (2),** and then select **text-embedding-ada-002 (3)**.
 
     ![](../media/af10.png)
 
@@ -101,7 +101,7 @@ In this task, you will deploy models in your Azure AI Foundry project. As you ne
     - Tokens per Minite Rate limit: **20k (2)**
     - Click on **Deploy (3)**
 
-      ![](../media/rg3.png)        
+      ![](../media/rg3.png)  
 
 1. Click on **Models+Endpoints (1)**, you can see the deployed models **(2)**.
 
@@ -112,15 +112,15 @@ In this task, you will deploy models in your Azure AI Foundry project. As you ne
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.   
 
-### Task 3: Create an Azure AI Search service
+### Task 3: Create an Azure AI Search Service
 
-In this task, you will create a Azure AI Search service. You need an Azure AI Search service and connection in order to create a search index.
+In this task, you will create an Azure AI Search service. You need an Azure AI Search service and connection to create a search index.
 
-1. Right click on [Create an Azure AI Search service](https://portal.azure.com/#create/Microsoft.Search) , click on **Copy link** and then paste it on the LabVM browser to create Azure AI Search service in the Azure portal.
+1. Right-click on [Create an Azure AI Search service](https://portal.azure.com/#create/Microsoft.Search), select **Copy link,** and then paste it into the LabVM browser to create an Azure AI Search service in the Azure portal.
 
-1. On the **Create a search service** page, provide the following details then click on **Review + create (6)**:
+1. On the **Create a search service** page, provide the following details, then click on **Review + create (6)**:
             
     - Subscription: **Leave your default subscription (1)**
     - Resource group: Select **ragsdk-<inject key="DeploymentID" enableCopy="false"/> (2)**
@@ -130,29 +130,29 @@ In this task, you will create a Azure AI Search service. You need an Azure AI Se
 
       ![](../media/rg4.png)
       
-1. Click on **Create** on *Review+create* page.
+1. Click on **Create** on the **Review+create** page.
 
     ![](../media/rg5.png)
 
 1. Wait for the deployment to complete.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:    
-   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+   - Hit the validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="671b186b-85fe-413f-b791-7896dbfaf8c6" />
 
 
-### Task 4: Connect the Azure AI Search to your project
+### Task 4: Connect the Azure AI Search to your Project
 
-In this task, you will connect the Azure AI Search to your project. Azure AI Search service and connection in order to create a search index. The search index is used to retrieve relevant documents based on the user's question.
+In this task, you will connect the Azure AI Search service to your project. Azure AI Search service and connection are used to create a search index. The search index is used to retrieve relevant documents based on the user's question.
 
-1. Navigate back to **Azure AI Foundary** portal, select **Management center** from the left pane.
+1. Navigate back to the **Azure AI Foundry** portal, and select **Management center** from the left pane.
 
     ![](../media/rg6.png)
 
-1. Select **Connected resources (1)** under the **Project(ContosoTrek)** section, then select **+ New connection (2)**.
+1. Select **Connected resources (1)** under the **Project (ContosoTrek)** section, then select **+ New connection (2)**.
 
     ![](../media/af17.png)
 
@@ -160,15 +160,15 @@ In this task, you will connect the Azure AI Search to your project. Azure AI Sea
 
     ![](../media/af18.png)
 
-1. Search for the AI Search that is created by you **aisearch-<inject key="DeploymentID" enableCopy="false"/> (1)**, use **API key (2)** for Authentication and then select **Add connection (3)**.
+1. Search for the AI Search that is created by you, **aisearch-<inject key="DeploymentID" enableCopy="false"/> (1)**. Use the **API key (2)** for authentication and then select **Add connection (3)**.
 
     ![](../media/af19.png)
 
-1. Make sure that AI Seach is **Connected**.
+1. Make sure that AI Search is **Connected**.
 
     ![](../media/af20.png)
 
-### Task 5: Clone the GitHub repository for the project
+### Task 5: Clone the GitHub Repository for the Project
 
 In this task, you will clone the GitHub repository for the project to access the necessary files for building the chat app.
 
@@ -176,11 +176,11 @@ In this task, you will clone the GitHub repository for the project to access the
 
     ![](../media/af81.png)
 
-1. Click on the **elipses(...) (1)**, click on **Terminal (2)** and then click on **New Terminal (3)**.
+1. Click on the **ellipses (...) (1)**, select **Terminal (2),** and then click on **New Terminal (3)**.
 
     ![](../media/af21.png)
 
-1. Enter the below command, to clone the GitHub repository for the project to the **ContosoTrek** folder to to access the necessary files for building the chat app.
+1. Enter the command below to clone the GitHub repository for the project to the **ContosoTrek** folder and access the necessary files for building the chat app.
 
    ```
    git clone https://github.com/Azure-Samples/azureai-samples.git C:\Users\demouser\Downloads\ContosoTrek
@@ -192,7 +192,7 @@ In this task, you will clone the GitHub repository for the project to access the
 
     ![](../media/rg9.png)
 
-1. Navigate to **C:\Users\demouser\Downloads (1)** press **Enter**, select **ContosoTrek (2)** and then click on **Select Folder (3)**.
+1. Navigate to **C:\Users\demouser\Downloads (1),** press **Enter**, select **ContosoTrek (2),** and then click on **Select Folder (3)**.
 
     ![](../media/af80.png)
 
@@ -206,7 +206,7 @@ In this task, you will clone the GitHub repository for the project to access the
 
      >**Note**: This file contains the necessary packages for building and managing an AI-powered application using the Azure AI Foundry SDK, including authentication, AI inference, search, data processing, and telemetry logging.
 
-1. Right click on **rag/custom-rag-app (1)** folder, then select **Open in Integrated Terminal (2)**.
+1. Right-click on the **rag/custom-rag-app (1)** folder, then select **Open in Integrated Terminal (2)**.
 
     ![](../media/af26.png)
 
@@ -218,29 +218,29 @@ In this task, you will clone the GitHub repository for the project to access the
 
      ![](../media/af28.png)    
 
-      >**Note:** Wait for the installation to complete, it might take some time.
+      >**Note:** Wait for the installation to complete. It might take some time.
 
-### Task 6: Configure environment variables
+### Task 6: Configure Environment Variables
 
 In this task, you will set up and configure the necessary environment variables to ensure seamless integration between your RAG application and Azure AI Foundry services.
 
-1. Navigate back to the **Azure AI Foundary** portal. If your in **Azure AI Foundary | Management center**, click on **Go to project**.
+1. Navigate back to the **Azure AI Foundry** portal. In **Azure AI Foundry | Management center**, click on **Go to project**.
 
     ![](../media/af-30.png)
 
-1. Navigate to **Overview (1)**, then copy and paste the **Project connection string (2)** in a notepad. You will be using it in next step.
+1. Navigate to **Overview (1)**, then copy and paste the **Project connection string (2)** into a notepad. You will be using it in the next step.
 
     ![](../media/af31.png)
 
-1. Get back to **Visual studio code**.
+1. Get back to **Visual Studio Code**.
 
-1. Right click on **.env.sample (1)**, click on **Rename (2)**.
+1. Right-click on **.env.sample (1)** and select **Rename (2)**.
 
     ![](../media/af29.png)
 
 1. Rename the file to `.env`.
 
-1. Click on `.env` **(1)** file, replace **your_connection_string (2)** with the **Project connection string** that you had copied in Step 2.
+1. Click on the `.env` **(1)** file and replace **your_connection_string (2)** with the **Project connection string** you copied in Step 2.
 
     ![](../media/af32.png)
 

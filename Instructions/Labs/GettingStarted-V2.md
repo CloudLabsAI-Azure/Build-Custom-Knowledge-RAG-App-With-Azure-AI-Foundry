@@ -4,7 +4,7 @@
 
 ## Overview
 
-In this Hands-On Lab, you will learn how to build a custom Retrieval-Augmented Generation (RAG) application using the Azure AI Foundry SDK. You will begin by setting up the required Azure resources and configuring the AI Foundry environment. Then, you will implement a RAG pipeline that indexes and retrieves relevant data to enhance AI-generated responses. Finally, you will evaluate and optimize the system’s performance by measuring retrieval accuracy, response quality, and efficiency. By the end of the session, you will have a functional RAG solution that integrates Azure AI capabilities for enhanced knowledge retrieval and response generation.
+In this hands-on lab, you will learn how to build a custom Retrieval-Augmented Generation (RAG) application using the Azure AI Foundry SDK. You will begin by setting up the required Azure resources and configuring the AI Foundry environment. Then, you will implement an RAG pipeline that indexes and retrieves relevant data to enhance AI-generated responses. Finally, you will evaluate and optimize the system’s performance by measuring retrieval accuracy, response quality, and efficiency. By the end of the session, you will have a functional RAG solution that integrates Azure AI capabilities for enhanced knowledge retrieval and response generation.
 
 ## Objectives
 
@@ -14,11 +14,11 @@ By the end of this lab, you will be able to:
 
 - **Building a RAG pipeline**: In this hands-on exercise, participants will gain insights about building a Retrieval-Augmented Generation (RAG) pipeline to enhance AI-generated responses. They will index knowledge sources, implement a retrieval pipeline, and generate responses enriched with relevant data. Additionally, they will integrate telemetry logging to monitor and optimize system performance.
 
-- **Evaluate and Optimize RAG Performance**: In this hands-on exercise, participants will gain insights about evaluating and optimizing the performance of a Retrieval-Augmented Generation (RAG) system. They will use Azure AI evaluators to assess retrieval accuracy, implement evaluation methods to measure response quality, and interpret results for fine-tuning the system’s efficiency.
+- **Evaluate and Optimize RAG Performance**: In this hands-on exercise, participants will gain insights about evaluating and optimizing the performance of a Retrieval-Augmented Generation (RAG) system. They will use Azure AI evaluators to assess retrieval accuracy, implement evaluation methods to measure response quality, and interpret results to fine-tune the system’s efficiency.
   
-## Pre-requisites
+## Prerequisites
 
-- Familiarity with Azure AI Foundry portal.
+- Familiarity with the Azure AI Foundry portal.
 - Basic understanding of large language models and their applications.
 - Familiarity with Retrieval-Augmented Generation (RAG) concepts.
 
@@ -32,11 +32,11 @@ The architecture flow involves using Azure AI Foundry to provision resources, in
 
 ## Explanation of Components
 
-1. **Azure AI Foundry**: Azure AI Foundry provides the foundational infrastructure including AI models, vector databases, and necessary resources for deploying and managing Retrieval-Augmented Generation (RAG) pipelines. This platform enables the creation of AI applications that utilize retrieval systems to enhance the accuracy and relevance of AI-generated responses.
+1. **Azure AI Foundry**: Azure AI Foundry provides the foundational infrastructure, including AI models, vector databases, and necessary resources for deploying and managing Retrieval-Augmented Generation (RAG) pipelines. This platform enables the creation of AI applications that utilize retrieval systems to enhance the accuracy and relevance of AI-generated responses.
 
-1. **Azure OpenAI**: Azure OpenAI Service provides REST API access to OpenAI's powerful language models and these models integrates with your data, enabling customized and secure interactions.
+1. **Azure OpenAI**: Azure OpenAI Service provides REST API access to OpenAI's powerful language models, which integrate with your data, enabling customized and secure interactions.
 
-1. **Azure OpenAI Models**: Azure OpenAI Models Offers pre-trained and customizable large language models for various AI applications. These models allow for powerful AI-driven solutions by generating tailored and contextually relevant content based on well-crafted prompts.
+1. **Azure OpenAI Models**: Azure OpenAI Models offer pre-trained and customizable large language models for various AI applications. These models help build powerful AI-driven solutions by generating tailored and contextually relevant content based on well-crafted prompts.
 
 1. **Azure AI Search**: Azure AI Search, formerly known as Azure Cognitive Search, is an enterprise-ready information retrieval system that allows you to store, index, and search your data, enabling powerful retrieval-augmented generation (RAG) applications and enterprise search engines. 
 
@@ -50,7 +50,7 @@ The architecture flow involves using Azure AI Foundry to provision resources, in
  
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and **Lab guide** will be right at your fingertips within your web browser.
+Once you are ready to dive in, your virtual machine and **Lab Guide** will be right at your fingertips within your web browser.
 
    ![](../media/afg1.png)
 
@@ -72,7 +72,7 @@ To get a better understanding of your lab resources and credentials, navigate to
  
 ## Utilizing the Split Window Feature
  
-For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
  
  ![Use the Split Window Feature](../media/afg4.png)
  
@@ -84,11 +84,11 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
 ## Lab Validation
 
-1. After completing the task, hit the **Validate (1)** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
+1. After completing the task, hit the **Validate (1)** button under the Validation tab integrated into your lab guide. You can proceed to the next task if you receive a success message. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
    ![Inline Validation](../media/u46.png)
 
-1. If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com
+1. If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
 
 ## Let's Get Started with Azure Portal
@@ -97,7 +97,7 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
    ![Launch Azure Portal](../media/afg6.png)
    
-1. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
+1. You will see the **Sign in to the Microsoft Azure** tab. Here, enter your credentials:
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
@@ -109,26 +109,26 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
  
        ![Enter Your Password](../media/afg8.png)
 
-1. If **Action required** pop-up window appears, click on **Ask later**.
+1. If an **Action required** pop-up window appears, click on **Ask later**.
 
    ![Ask Later](../media/afg9.png)
     
 1. If prompted to stay signed in, you can click **No**.
  
-1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
+1. If a **Welcome to Microsoft Azure** pop-up window appears, click **Cancel** to skip the tour.
 
-This hands-on lab will guide you in building a custom Retrieval-Augmented Generation (RAG) application using the Azure AI Foundry SDK. You will learn how to provision essential resources, develop a retrieval pipeline, and evaluate system performance. Through this lab, you will gain insights into how Azure AI Foundry enhances knowledge retrieval and response generation, enabling more accurate and context-aware AI applications.
+This hands-on lab will guide you in building a custom Retrieval-Augmented Generation (RAG) application using the Azure AI Foundry SDK. You will learn how to provision essential resources, develop a retrieval pipeline, and evaluate system performance. This lab will give you insights into how Azure AI Foundry enhances knowledge retrieval and response generation, enabling more accurate and context-aware AI applications.
 
 ## Support Contact
 
-The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
+The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance anytime. We offer dedicated support channels tailored specifically for learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
 
 Learner Support Contacts:
 
 - Email Support: cloudlabs-support@spektrasystems.com
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+Click **Next** from the lower right corner to move on to the next page.
 
 ![Launch Azure Portal](../media/afg10.png)
 
